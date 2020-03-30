@@ -8,7 +8,7 @@ console.log('Пн, вт, ср, чт, пт, сб, вс');
 else{
     console.log('Error');
 }
-lang = 'en'
+lang = 'en';
 switch(lang){
     case 'ru':
         console.log('Пн, вт, ср, чт, пт, сб, вс');
@@ -17,8 +17,12 @@ switch(lang){
         console.log('Mon, Tue, Wed, Thu, Fri, Sat, Sun');
 }
 
-let lang_arry = []
+let lang_arry = [];
 lang_arry['en'] = ['Mon, Tue, Wed, Thu, Fri, Sat, Sum'];
 lang_arry['ru'] = ['Пн, вт, ср, чт, пт сб, вс'];
 lang = 'ru';
 console.log(lang_arry[lang]);
+let namePerson = 'Артём';
+ let result = namePerson  === 'Артём' ? 'Директор' : namePerson === 'Максим' ? 'Преподаватель' : 'студент';
+ console.log(result);
+
