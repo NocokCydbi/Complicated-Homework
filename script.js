@@ -1,8 +1,24 @@
-let num = 266219;
-num = 2*6*6*2*1*9;
-console.log(num);
-num = num ** 3;
-console.log(num);
+'use strict';
+let lang = 'ru';
+if (lang === 'ru'){
+console.log('Пн, вт, ср, чт, пт, сб, вс');
+}else if (lang === 'en'){
+    console.log('Mon, Tue, Wed, Thu, Fri, Sat, Sun');
+}
+else{
+    console.log('Error');
+}
+lang = 'en'
+switch(lang){
+    case 'ru':
+        console.log('Пн, вт, ср, чт, пт, сб, вс');
+    break;
+    case 'en':
+        console.log('Mon, Tue, Wed, Thu, Fri, Sat, Sun');
+}
 
-num = String(num)
-console.log(num.substr(0,2));
+let lang_arry = []
+lang_arry['en'] = ['Mon, Tue, Wed, Thu, Fri, Sat, Sum'];
+lang_arry['ru'] = ['Пн, вт, ср, чт, пт сб, вс'];
+lang = 'ru';
+console.log(lang_arry[lang]);
