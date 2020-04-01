@@ -1,8 +1,8 @@
-let num = 266219;
-num = 2*6*6*2*1*9;
-console.log(num);
-num = num ** 3;
-console.log(num);
 
-num = String(num)
-console.log(num.substr(0,2));
+let arr = ['421421421', '321321', '21321321', '10321321', '52156', '442421'];
+
+arr.forEach((item) => {
+  if (item.startsWith('2') || item.startsWith('4')) {
+    console.log(item);
+  }
+});
